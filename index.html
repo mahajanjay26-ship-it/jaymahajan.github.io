@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Jay Mahajan | Data Analyst Portfolio</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial, sans-serif;
 background:#0f172a;
 color:white;
+line-height:1.6;
 }
+
+/* HEADER */
 
 header{
 text-align:center;
-padding:80px;
+padding:80px 20px;
 background:linear-gradient(135deg,#1e293b,#020617);
 }
 
@@ -25,34 +31,65 @@ margin:0;
 
 .subtitle{
 color:#22c55e;
+margin-top:10px;
 }
+
+/* GENERAL SECTIONS */
 
 section{
-padding:60px;
+padding:60px 20px;
 max-width:1000px;
 margin:auto;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-padding:25px;
-margin:20px 0;
-border-radius:15px;
-box-shadow:0 0 20px rgba(0,0,0,0.5);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px) scale(1.02);
 }
 
 h2{
 color:#22c55e;
 }
 
+/* CARDS */
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+margin:20px 0;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* LINKS */
+
 a{
 color:#22c55e;
 text-decoration:none;
+}
+
+/* CERTIFICATES STYLE */
+
+.certificate{
+display:flex;
+gap:20px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.certificate img{
+width:260px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+.certificate{
+flex-direction:column;
+text-align:center;
+}
 }
 
 </style>
@@ -102,10 +139,37 @@ Data Analyst with hands-on experience in collecting, cleaning, transforming and 
 
 <h2>Certifications</h2>
 
-<div class="card">Introduction to SQL</div>
-<div class="card">Introduction to Prompt Engineering</div>
-<div class="card">Deloitte Australia Data Analytics Job Simulation</div>
-<div class="card">Data Science Certification - Internshala</div>
+<div class="card certificate">
+<img src="sql-certificate.jpg" alt="SQL Certificate">
+<div>
+<h3>Introduction to SQL</h3>
+<p>Learned database querying, joins, filtering, aggregation and analytical SQL techniques.</p>
+</div>
+</div>
+
+<div class="card certificate">
+<img src="prompt-engineering.jpg" alt="Prompt Engineering Certificate">
+<div>
+<h3>Introduction to Prompt Engineering</h3>
+<p>Understanding AI tools, effective prompting strategies and modern AI workflows.</p>
+</div>
+</div>
+
+<div class="card certificate">
+<img src="deloitte-certificate.jpg" alt="Deloitte Certificate">
+<div>
+<h3>Deloitte Australia Data Analytics Job Simulation</h3>
+<p>Hands-on virtual experience solving real business problems using data analysis.</p>
+</div>
+</div>
+
+<div class="card certificate">
+<img src="datascience-certificate.jpg" alt="Data Science Certificate">
+<div>
+<h3>Data Science Certification - Internshala</h3>
+<p>Covered data analysis fundamentals, statistics and analytical problem-solving concepts.</p>
+</div>
+</div>
 
 </section>
 
@@ -114,7 +178,7 @@ Data Analyst with hands-on experience in collecting, cleaning, transforming and 
 <h2>Education</h2>
 
 <div class="card">
-Bachelor of Science (Information Technology)  
+Bachelor of Science (Information Technology)<br>
 Rashtrasant Tukadoji Maharaj Nagpur University
 </div>
 
@@ -125,7 +189,7 @@ Rashtrasant Tukadoji Maharaj Nagpur University
 <h2>Contact</h2>
 
 <div class="card">
-Email: mahajanjay26@gmail.com <br>
+Email: mahajanjay26@gmail.com<br>
 Mobile: 8010556417
 </div>
 
@@ -133,4 +197,3 @@ Mobile: 8010556417
 
 </body>
 </html>
-
